@@ -1,0 +1,12 @@
+<h3>Mosh's Github Followers</h3>
+<div class="media" *ngFor="let follower of followers">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object avatar-icon" [src]="follower.avatar_url">
+    </a>
+  </div>
+  <div class="media-body">
+    <div class="media-heading">{{follower.login}}</div>
+    <p>{{follower.url}}</p>
+  </div>
+</div>
